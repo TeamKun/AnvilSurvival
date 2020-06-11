@@ -1,0 +1,26 @@
+name: AnvilSurvival
+version: ${project.version}
+main: net.teamfruit.anvilsurvival.AnvilSurvival
+api-version: 1.13
+prefix: AnvilSurvival
+authors: [Kamesuta]
+description: 金床おちる
+website: https://www.teamfruit.net/
+
+commands:
+  anvilsurvival:
+    description: Anvil Command
+    aliases: [anvil, av]
+    permission: anvilsurvival
+    usage: |-
+      /anvil <start|stop|pos1|pos2|interval|count>
+      /anvil start (金床を開始します)
+      /anvil stop (金床を停止します)
+      /anvil pos1 (矩形の開始地点を設定します)
+      /anvil pos2 (矩形の終了地点を設定します)
+      /anvil interval (金床が降ってくるタイミングを指定します)
+      /anvil +interval (加算)
+      /anvil -interval (減算)
+      /anvil count (一度に降ってくる量を指定します)
+      /anvil +count (加算)
+      /anvil -count (減算)
